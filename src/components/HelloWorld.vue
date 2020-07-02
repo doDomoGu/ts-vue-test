@@ -1,17 +1,21 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <button v-on:click="hello">Click</button>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from "vue-property-decorator"
 
 @Component
 export default class HelloWorld extends Vue {
-  @Prop() private msg!: string;
+  @Prop() /* private */ msg!: string
   created() {
-    console.log(2, 3, 4);
+    console.log(2, 3, 4)
+  }
+  hello() {
+    console.log("say hello")
   }
 }
 </script>
