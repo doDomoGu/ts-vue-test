@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator"
+import { Component, Prop, Vue } from 'vue-property-decorator'
 
 @Component
 export default class HelloWorld extends Vue {
@@ -15,7 +15,7 @@ export default class HelloWorld extends Vue {
     console.log(2, 3, 4)
   }
   hello() {
-    console.log("say hello")
+    console.log('say hello')
   }
 }
 </script>
